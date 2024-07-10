@@ -67,7 +67,7 @@ const incompleteTodos = todoList.filter (todo => !todo.isComplete);
                         </div>
                     </div>
                 </div>
-                <div className="bg-white w-[60vh] p-10 mx-10 rounded">
+                <div className="bg-white w-[60vh] p-10 mx-10 rounded-xl">
                     <h1 className="text-3xl mb-10">Completed Task</h1>
                     {completeTodos.map((item, index)=>{
                         return <TodoItems key={index} text={item.text} id={item.id} isComplete={item.isComplete} deleteTodo={deleteTodo} toggle={toggle}/>
